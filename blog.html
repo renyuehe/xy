@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的技术博客</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --light-gray: #f5f7fa;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: var(--secondary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            background: var(--primary-color);
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .blog-post {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .post-title {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .post-content {
+            margin-bottom: 15px;
+        }
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>技术探索者</h1>
+        <p>分享编程知识与技术见解</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">前端技术</a></li>
+            <li><a href="#">后端开发</a></li>
+            <li><a href="#">关于我</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="blog-post">
+            <h2 class="post-title">Vue 3.0 新特性全面解析</h2>
+            <div class="post-meta">发布于 2023年5月15日 | 分类: 前端技术 | 作者: 张三</div>
+            <div class="post-content">
+                <p>Vue 3.0作为Vue.js的下一个主要版本，带来了许多令人兴奋的新特性。其中最引人注目的是Composition API，它提供了一种更灵活的方式来组织和重用组件逻辑...</p>
+            </div>
+            <a href="#" class="read-more">阅读更多 &raquo;</a>
+        </div>
+        
+        <div class="blog-post">
+            <h2 class="post-title">React Hooks 最佳实践</h2>
+            <div class="post-meta">发布于 2023年4月28日 | 分类: 前端技术 | 作者: 李四</div>
+            <div class="post-content">
+                <p>React Hooks自推出以来已经彻底改变了我们编写React组件的方式。本文将分享一些在实际项目中使用Hooks的最佳实践，帮助你避免常见陷阱...</p>
+            </div>
+            <a href="#" class="read-more">阅读更多 &raquo;</a>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2023 技术探索者 | 由HTML+CSS构建
+    </footer>
+</body>
+</html>
