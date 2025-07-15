@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习资源 - 月河导航</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 1;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .back-button:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateX(-5px);
+        }
+        
+        .resource-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .resource-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .resource-title {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+        
+        .resource-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .resource-link:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .resource-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .tag {
+            background: #e0e0e0;
+            color: #555;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> 返回主页
+        </a>
+        <div class="container">
+            <h1>学习资源</h1>
+            <p>精选技术学习资源与参考资料</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="resource-container">
+            <!-- 资源1 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <h2 class="resource-title">MDN Web文档</h2>
+                    <a href="https://developer.mozilla.org/zh-CN/" class="resource-link" target="_blank">访问网站</a>
+                </div>
+                <p class="resource-description">
+                    Mozilla开发者网络的Web技术文档，包含HTML、CSS、JavaScript等前端技术的详细参考文档和教程。
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">前端开发</span>
+                    <span class="tag">文档</span>
+                    <span class="tag">教程</span>
+                </div>
+            </div>
+            
+            <!-- 资源2 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <h2 class="resource-title">LeetCode</h2>
+                    <a href="https://leetcode.cn/" class="resource-link" target="_blank">访问网站</a>
+                </div>
+                <p class="resource-description">
+                    算法练习平台，包含大量编程题目，适合提升算法和数据结构能力。支持多种编程语言。
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">算法</span>
+                    <span class="tag">数据结构</span>
+                    <span class="tag">编程练习</span>
+                </div>
+            </div>
+            
+            <!-- 资源3 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <h2 class="resource-title">Coursera</h2>
+                    <a href="https://www.coursera.org/" class="resource-link" target="_blank">访问网站</a>
+                </div>
+                <p class="resource-description">
+                    国际知名在线学习平台，提供来自世界顶尖大学和公司的课程，涵盖计算机科学、数据科学等多个领域。
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">在线课程</span>
+                    <span class="tag">名校课程</span>
+                    <span class="tag">认证</span>
+                </div>
+            </div>
+            
+            <!-- 资源4 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <h2 class="resource-title">GitHub</h2>
+                    <a href="https://github.com/" class="resource-link" target="_blank">访问网站</a>
+                </div>
+                <p class="resource-description">
+                    全球最大的代码托管平台，可以找到各种开源项目、学习优秀代码、参与开源贡献。
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">开源</span>
+                    <span class="tag">代码托管</span>
+                    <span class="tag">协作</span>
+                </div>
+            </div>
+            
+            <!-- 资源5 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <h2 class="resource-title">Stack Overflow</h2>
+                    <a href="https://stackoverflow.com/" class="resource-link" target="_blank">访问网站</a>
+                </div>
+                <p class="resource-description">
+                    程序员问答社区，遇到编程问题时可以在这里搜索解决方案或提问。
+                </p>
+                <div class="resource-tags">
+                    <span class="tag">问答</span>
+                    <span class="tag">问题解决</span>
+                    <span class="tag">社区</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 月河导航 | 学习资源合集</p>
+    </footer>
+</body>
+</html>
