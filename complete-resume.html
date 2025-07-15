@@ -169,6 +169,22 @@
         .back-button:hover i {
             transform: translateX(-3px);
         }
+
+        .subsection {
+            margin-top: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+        
+        .subsection h3 {
+            color: #3498db;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        
+        .subsection:first-child {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -180,7 +196,7 @@
             求职意向
             <div class="job-positions">销售工程师、电器工程师、算法工程师</div>
         </div>
-        <img src="头像.jpeg" alt="个人照片" class="profile-img">
+        <img src="img/头像.jpeg" alt="个人照片" class="profile-img">
         <div class="personal-info">
             <h1>任月禾</h1>
             <p><span class="info-label">年龄:</span> 32岁 </p>
@@ -195,7 +211,7 @@
         <h2>教育经历</h2>
         <div class="experience">
             <p><strong>川大科技园</strong> <span class="date">2015.10-2016.01</span></p>
-            <p>汽修 | 中级技工</p>
+            <p>汽修 | 中级技工 | 退伍福利</p>
             <p>主修课程: 汽车维修技术、汽车电工与电子基础、汽车发动机构造与维修、汽车底盘构造与维修</p>
         </div>
         <div class="experience">
@@ -204,8 +220,12 @@
             <p>主修课程: 电工技术、电力电子技术、电气控制线路安装与检修、机电维修、传感器与检测技术、PLC基础与实训、变频技术及应用、机械基础、机械制图、电子CAD、51单片机、数字电路、模拟电路</p>
         </div>
         <div class="experience">
-            <p><strong>电子科技大学</strong> <span class="date">2017-2020</span></p>
-            <p>计算机科学与技术 | 本科 | 学士学位</p>
+            <p><strong>电子科技大学</strong> 
+                <span class="date">
+                    <a href="explanation.html#uestc-explanation">2017-2019（2021）</a>
+                </span>
+            </p>
+            <p>计算机科学与技术 | 本科 | 学士学位 | 自考</p>
             <p>主修课程: 高等数学（工本）、离散数学、概率论与数理统计（二）、英语（二）、
             操作系统、计算机系统结构、计算机网络原理、数据库系统原理、算法设计、C++程序设计、Java语言程序设计（一）、网页设计与制作、
             毛泽东思想概论、马克思主义基本原理、马克思主义政治经济学原理、中国近代史纲要</p>
@@ -217,17 +237,21 @@
         <h2>培训经历</h2>
         <div class="experience">
             <p><strong>华清远见</strong> <span class="date">2020</span></p>
-            <p> 嵌入式学院 | 嵌入式 </p>
+            <p> 嵌入式学院 | 线下 </p>
             <p>主修课程: C语言高级编程、数据结构与算法、Linux操作系统基础、ARM体系架构与编程、嵌入式硬件接口开发、Linux系统移植与驱动开发、嵌入式Linux应用开发、Qt图形界面开发、Python编程与AI框架应用、嵌入式AI项目实战</p>
             <p>毕业设计: 车辆管理系统：包括出入计数、车牌识别、空位计数、停车收费等功能</p>
         </div>
         <div class="experience">
-            <p><strong>四川省人工智能研究院猎维AI人才创新中心</strong> <span class="date">2021</span></p>
-            <p> 人工智能算法工程师实训课程 </p>
+            <p><strong>猎维AI人才创新中心</strong> <span class="date">2021</span></p>
+            <p> 人工智能算法工程师课程 | 线上</p>
             <p>主修课程: 人工智能基础、编程与数学基础、计算机视觉与图像处理、机器学习与深度学习、高级进阶与实战项目</p>
-            <p>具体课程: Python编程、数学基础（如线性代数、概率论等）、NumPy数据编程、图像框架（如MatplotLib、PIL）、opencv、SK-Learn、PyTorch</p>
-            <p>神经网络：全连接神经网络、卷积神经网络、循环神经网络、对抗生成网络、梯度问题和优化方法、拟合问题和优化方法、模型设计原理、常见的模型、评估方法、CNN、MTCNN、GAN、Yolo等</p>
-            <p>参与项目: 医疗骨骼分割、铁路车辆安全检测系统</p>
+            <p>具体课程: Python编程、数学基础（如线性代数、概率论等）、pytorch、numpy、sklearn、Opencv、Matplot框架</p>
+            <p>神经网络：全连接神经网络、卷积神经网络、循环神经网络、对抗生成网络、梯度问题和优化方法、拟合问题和优化方法、模型设计原理、常见的模型、评估方法、CNN、MTCNN、GAN、Yolo、Unet、U2net、RNN、LSTM、Seq2Seq、Transformer、风格迁移、追踪算法、强化学习等</p>
+        </div>
+        <div class="experience">
+            <p><strong>Bilibili</strong> <span class="date">2022</span></p>
+            <p> Games系列课程 | 线上</p>
+            <p> Game101（现代计算机图形学入门-闫令琪）， Games202（高质量实时渲染），Game201（高级物理引擎实战） </p>
         </div>
     </div>
     
@@ -270,61 +294,253 @@
 
     <div class="section">
         <h2>项目经历</h2>
+
+        <div class="subsection">
+            <h3>重要</h3>
+            <div class="experience">
+                <p><strong>图形学接单系列（独立）</strong> <span class="date">2023-至今</span></p>
+                <ul>
+                    <li>离线光线追踪</li>
+                    <li>实时光线追踪</li>
+                    <li>基于Opencv的场景毕业</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <p><strong>算法推理框架（成员：算法部署）</strong> <span class="date">2022</span></p>
+                <p>推理框架、算法库、通信库，python的算法转成C++形式继承在算法库中，然后通过通信库打包成sdk提供给java、python、c++以及跨平台调用。</p>
+            </div>
+            <div class="experience">
+                <p><strong>OCR物料编码系统（成员：优化）</strong> <span class="date">2022</span></p>
+                <p>河北钢铁产业线，线材、棒材、热轧、冷轧的物料编码识别于追踪。
+                研究并更新OCR物料编码系统算法部分，出了4个方案，python端一一实现后转C++集成进算法库。基于CRNN的改进版本，采用多种形式，实现了速度快精度高的效果，经过对实际环境针对性设计后，DBNet的召回率和精度均能打到99.5以上。</p>
+            </div>
+    
+            <div class="experience">
+                <p><strong>高速公路车流追踪系统（成员：部署）</strong> <span class="date">2022</span></p>
+                <p>yolov5deepsort的高速公路上车流追踪（计数、轨迹、测速），算法主要分为3个分布，目标检测部分、单应性变换部分、追踪部分。其中目标检测采用yolov5，单应性变换opencv的系列算法，追踪部分采用deepsort（卡尔曼滤波、匈牙利匹配）这些。</p>
+            </div>
+            <div class="experience">
+                <p><strong>智慧医疗检测系统（独立）</strong> <span class="date">2021</span></p>
+                <p>采用对人体部位的数据分析，根据系统得出不同的结论，并反馈给用户。
+                    负责：1、数据预处理，采用暗通道去雾法和标准化，得到的较好的图片效果
+                    2、选用符合场景效率且精度很高的U2Net网络，并定制输出通道
+                    3、对颜色通道的排列组合、对U2Net的改进以支持语义分割更多的类别
+                    4、手骨分割项目中硬骨mIOU达到97.6%，软骨mIOU达到82.1%
+                    </p>
+            </div>
+            <div class="experience">
+                <p><strong>车辆安全检测系统（独立）</strong> <span class="date">2021</span></p>
+                <p>描述：通对比检修好车辆与行进中车辆的对比，检测车辆的安全性，并反馈。
+                    负责：1、无损增亮的预处理方法，取得了很好的效果
+                    2、选用最新的Yolox并配置轻量级网络作为一级网络、mAP达到99.7%
+                    3、使用书写排序法、变形数据还原法、热力点
+                    </p>
+            </div>
+            <div class="experience">
+                <p><strong>人脸识别（独立）</strong> <span class="date">2021</span></p>
+                <p>MTCNN做为一级网络检测出人脸、VGG19作为二级网络Arcfaceloss对二级网络全连接层（特征图）做损失使得特征分布互斥，最后通过余弦相似度的方法来对人脸进行识别，项目缺陷为无法支持大数据人脸。</p>
+            </div>
+            <div class="experience">
+                <p><strong>四川宏业清单计价软件（成员）</strong> <span class="date">2020</span></p>
+                <p>描述：一款符合电子招投标接口的计价软件，主要用于工程清单计价。
+                    负责：1、参与插件系统框架设计、表格树的设计、多选树的设计
+                    2、变化单元格的设计、多窗口管理器的设计
+                    3、根据小组分配以及需求的沟通写相应的界面
+                    4、根据测试部的反馈修复bug
+                    </p>
+            </div>
+            <div class="experience">
+                <p><strong>Qt简易绘图软件（毕设）</strong> <span class="date">2020</span></p>
+                <p>Qt制作的一款绘图软件，具有绘制各种基本形状，贝塞尔曲线，钢笔工具，贴图，撤销回退等，窗口切换动画等多种功能。 </p>
+            </div>
+            <div class="experience">
+                <p><strong>社区智慧停车系统（成员）</strong> <span class="date">2019</span></p>
+                <p>描述：小区出入车辆管理系统，其中百度AI接口实现车牌识别。
+                    负责：1、客户端：Qt界面制作（控制台、社区内、社区外）
+                    2、客户端：数据库存储（sqlite3）
+                    3、客户端：二维码接口系统
+                    4、客户端：多线程方式与服务器交互，控制流TCP，视频传输UDP
+                    5、服务器：多线程服务器，UDP传输视频，TCP传输控制指令和数据库信息。
+                    6、服务器：当时车牌识别解决方案是通过百度AI接口。                
+                </p>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h3>其他</h3>
+            <div class="experience">
+                <p><strong>口罩生成器（独立）</strong> <span class="date">2022</span></p>
+                <p>基于dlib（或其他）68个关键点检测的公开库上的，实现口罩侧脸正脸自动拟合并生成不同口罩的工具，主要是给口罩识别项目造数据用。</p>
+            </div>
+            <div class="experience">
+                <p><strong>航空复合材料强度测试系统（独立）</strong> <span class="date">2022</span></p>
+                <p>通过拉力机对两块合并的航空复合材料的其中一块拉伸，通过但目标定对相机做畸变矫正后对指定区域做透视变换，并最终找到指定长度被裂隙时的拉力，并记录下来。</p>
+            </div>
+            <div class="experience">
+                <p><strong>智能跟随车（独立）</strong> <span class="date">2020</span></p>
+                <p>小车核心板就是任何一台安卓手机，基于Aidlux平台开发，跟随车采用步进电机，目标跟踪使用卡尔曼滤波，目标前进后退采用pid算法。</p>
+            </div>
+            <div class="experience">
+                <p><strong>Opencv可视化软件（独立）</strong> <span class="date">2020</span></p>
+                <p>用C++、Qt、Opencv以及插件技术做的一款可视化调试软件，可以快速方便的对OpenCV接口效果进行可视化分析、独立测试和组合测试，则方便在做图像预处理的时候快速的看到效果。</p>
+            </div>
+            <div class="experience">
+                <p><strong>智能循迹小车（独立）</strong> <span class="date">2018</span></p>
+                <p>树莓派小车，在继承linux系统上python接口开发的，避障
+                    循迹、摄像一体的传统智能小车。
+                </p>
+            </div>
+            <div class="experience">
+                <p><strong>飞机大战（独立）</strong> <span class="date">2019</span></p>
+                <p>linux环境下使用python以及pygame库做的一款飞机大战游戏。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2>其他经历</h2>
         <div class="experience">
-            <p><strong>图形学接单系列</strong> <span class="date">2022-至今</span></p>
-            <p>独立</p>
+            <p><strong>淘宝店</strong> <span class="date">2017-2018</span></p>
+            <p>资源倒买倒卖吧，薄利多销，不值一提</p>
+        </div>
+        <div class="experience">
+            <p><strong>奶茶店</strong> <span class="date">2016</span></p>
             <ul>
-                <li>离线光线追踪</li>
-                <li>实时光线追踪</li>
-                <li>基于Opencv的场景毕业</li>
+                <li>铺面装修</li>
+                <li>前期培训</li>
+                <li>推广（发传单）</li>
+                <li>同行借冰</li>
             </ul>
         </div>
+        <div class="experience">
+            <p><strong>摆摊生涯</strong> <span class="date">2018 | 2024</span></p>
+            <ul>
+                <li>蓝翔冬季周末摆摊、创立蓝翔校内送货上门服务，以及校内二手交易平台（面对面QQ群）</li>
+                <li>夏季绿豆冰、冰粉冰汤圆</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <p><strong>日结</strong> <span class="date">2023后</span></p>
+            <ul>
+                <li>京东物流装车、拣货，分拣，赶上618</li>
+                <li>火车站搬运</li>
+                <li>发传单日结</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <p><strong>穷游中国</strong> <span class="date">时常</span></p>
+            <p></p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <p><strong>问佛求道</strong> <span class="date">时常</span></p>
+            <p></p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
     </div>
     
     <div class="section">
         <h2>技能描述</h2>
-        <div class="skills">
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name">嵌入式</span>
-                    <span class="skill-stars">★★★★☆</span>
+        <div class="subsection">
+            <h3>计算机</h3>
+            <div class="skills">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">嵌入式</span>
+                        <span class="skill-stars">★★☆☆☆</span>
+                    </div>
+                    <div class="skill-description">熟悉嵌入式系统开发，了解ARM架构编程经验</div>
                 </div>
-                <div class="skill-description">熟悉嵌入式系统开发，有ARM架构编程经验</div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Qt桌面应用开发</span>
+                        <span class="skill-stars">★★★★★</span>
+                    </div>
+                    <div class="skill-description">3年Qt开发经验，熟悉跨平台应用开发</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-name">算法（pytorch框架）</div>
+                        <div class="skill-stars">★★★☆☆</div>
+                    </div>
+                    <div class="skill-description">熟悉PyTorch框架，有深度学习项目经验</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-name">算法部署（C++部署）</div>
+                        <div class="skill-stars">★★★★☆</div>
+                    </div>
+                    <div class="skill-description">能将训练好的模型部署到生产环境</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-name">图形学相关</div>
+                        <div class="skill-stars">★★★☆☆</div>
+                    </div>
+                    <div class="skill-description">了解计算机图形学基本原理，C++实现（离线光线追踪，实时光线追踪、基于物理引擎的图形框架）</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-name">建模</div>
+                        <div class="skill-stars">★★☆☆☆</div>
+                    </div>
+                    <div class="skill-description">主要用Blender软件</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-name">剪辑</div>
+                        <div class="skill-stars">★★☆☆☆</div>
+                    </div>
+                    <div class="skill-description">剪影，达芬奇</div>
+                </div>
             </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <span class="skill-name">Qt桌面应用开发</span>
-                    <span class="skill-stars">★★★★★</span>
+        </div>
+
+        <div class="subsection">
+            <h3>电器自动化</h3>
+            <div class="skills">
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">电工（高级技工）</span>
+                            <span class="skill-stars">★★★☆☆</span>
+                        </div>
+                        <div class="skill-description">配电箱装线、电机维修、家装电工，diy开发板相关电路，家用宽带网络配置（交换机、路由器）配置与接线，也修过手机，大疆无人机等</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">51单片机</span>
+                            <span class="skill-stars">★★★★☆</span>
+                        </div>
+                        <div class="skill-description">51单片机的全系列开发</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PLC</span>
+                            <span class="skill-stars">★★☆☆☆</span>
+                        </div>
+                        <div class="skill-description">简单学习过梯形图，编程使用方法</div>
+                    </div>
                 </div>
-                <div class="skill-description">3年Qt开发经验，熟悉跨平台应用开发</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-name">算法（pytorch框架）</div>
-                    <div class="skill-stars">★★★☆☆</div>
-                </div>
-                <div class="skill-description">熟悉PyTorch框架，有深度学习项目经验</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-name">算法部署（用C++部署算法）</div>
-                    <div class="skill-stars">★★★★☆</div>
-                </div>
-                <div class="skill-description">能将训练好的模型部署到生产环境</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-header">
-                    <div class="skill-name">图形学（离线光线追踪，实时光线追踪、基于物理引擎的图形框架）</div>
-                    <div class="skill-stars">★★★☆☆</div>
-                </div>
-                <div class="skill-description">了解计算机图形学基本原理，有相关项目经验</div>
             </div>
         </div>
     </div>
-    
+
     <div class="section">
         <h2>自我评价</h2>
         <div class="self-evaluation">
+            <p>以前我认为技很重要，学好数理化走遍天下都不怕，天干饿不死手艺人。（2025前）</p>
+            <p>现在我认为人最重要，以人为本人定胜天，社会的本质是围着人在运动。（2025后）</p>
             <p>走自己的路</p>
         </div>
     </div>
