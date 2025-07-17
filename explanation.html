@@ -33,30 +33,20 @@
         }
         .proof-image-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* 固定3列 */
             gap: 15px;
             margin: 20px 0;
         }
-        .proof-image {
-            width: 100%;
-            height: 200px; /* 固定高度 */
-            object-fit: contain; /* 保持图片比例完整显示 */
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            background-color: #f5f5f5; /* 图片背景色 */
-            padding: 5px; /* 内边距 */
-        }
         
-        /* 修复图形学部分的图片类名不一致问题 */
-        .project-image {
+        .proof-image, .project-image {
             width: 100%;
-            height: 200px;
+            aspect-ratio: 1/1; /* 强制1:1宽高比 */
             object-fit: contain;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             background-color: #f5f5f5;
             padding: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
         .proof-image:hover {
             transform: scale(1.02);
@@ -137,8 +127,9 @@
     </div>
 
     <div id="tb-explanation" class="explanation">
-        <h2>蓝翔期间自学编程，自考电子科大，利用经过自己检验过的获得的学习资料开淘宝店的一些记录</h2>
-        <p>薄利多销，自动发货，销量大概又7000单，好评更是4000+，但那个时候认为学技术更重要，后来便放下了</p>
+        <h2>淘宝早期开店记录</h2>
+        <p>蓝翔期间自学编程，自考电子科大，利用经过自己检验过的获得的学习资料开淘宝店的一些记录。
+            薄利多销，自动发货，销量大概又7000单，好评更是4000+，但那个时候认为学技术更重要，后来便放下了</p>
         <div class="proof-image-container">
             <img src="img/淘宝/淘宝倒买倒卖1.png" alt="淘宝" class="proof-image">
             <img src="img/淘宝/淘宝倒买倒卖2.png" alt="淘宝" class="proof-image">
@@ -147,14 +138,15 @@
     </div>
 
     <div id="baitan-explanation" class="explanation">
-        <h2>蓝翔面对面创业 与 摆摊记录</h2>
-        <p>都是一个寝室的同学换着摆，赚了钱大家分。在此基础上我们还建立了校内群，科技小馆-面对面：校内送货上门，以及校内同学们的二手交易</p>
+        <h2>面对面（局部闲鱼）二手交易与售卖结合创业 与 摆摊记录</h2>
+        <p>在蓝翔期间做的事情，都是一个寝室的同学换着摆，赚了钱大家分。在此基础上我们还建立了校内群，科技小馆-面对面：校内送货上门，以及校内同学们的二手交易</p>
         <div class="proof-image-container">
-            <img src="img/面对面-摆摊/面对面-海报.jpg" alt="摆摊" class="proof-image">
+            <img src="img/面对面-摆摊/蓝翔摆摊-3.jpg" alt="摆摊" class="proof-image">
             <img src="img/面对面-摆摊/面对面-qq群.jpg" alt="摆摊" class="proof-image">
+            <img src="img/面对面-摆摊/面对面-海报.jpg" alt="摆摊" class="proof-image">
             <img src="img/面对面-摆摊/蓝翔摆摊-1.jpg" alt="摆摊" class="proof-image">
             <img src="img/面对面-摆摊/蓝翔摆摊-2.jpg" alt="摆摊" class="proof-image">
-            <img src="img/面对面-摆摊/蓝翔摆摊-3.jpg" alt="摆摊" class="proof-image">
+
         </div>
     </div>
 
@@ -162,17 +154,20 @@
         <h2>早期大疆无人机飞行记录，以及维修记录</h2>
         <p>那时候玩大疆还不需要无人机飞行证书，也没有商业证书，维修更是没有教程，大疆悟1炸机后，我们除了云台修不了，其他的很多部件都是利用学校学习和实习的经验最终购买配件的方式自己修好了，但是代价是配件价格几乎都可以又买个新的了</p>
         <div class="proof-image-container">
-            <img src="img/大疆无人机-济南/0.jpg" alt="无人机" class="proof-image">
-            <img src="img/大疆无人机-济南/1.jpg" alt="无人机" class="proof-image">
-            <img src="img/大疆无人机-济南/2.jpg" alt="无人机" class="proof-image">
-            <img src="img/大疆无人机-济南/悟1.jpg" alt="无人机" class="proof-image">
-            <img src="img/大疆无人机-济南/悟4.jpg" alt="无人机" class="proof-image">
-            <img src="img/大疆无人机-济南/悟8.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/0.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/2.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/3.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/4.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/5.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/6.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/7.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/8.jpg" alt="无人机" class="proof-image">
+            <img src="img/大疆无人机/9.jpg" alt="无人机" class="proof-image">
         </div>
     </div>
 
     <div id="games-explanation" class="explanation">
-        <h2>图形学接单系列</h2>
+        <h2>图形学接单系列、深度学习接单系列</h2>
         <p>图形学的从淘宝，闲鱼，中介那里接的部分单子的展示</p>
         <div class="proof-image-container">
             <img src="img/图形学/0.jpg" alt="图形学" class="project-image">
@@ -182,11 +177,78 @@
             <img src="img/图形学/4.jpg" alt="图形学" class="project-image">
             <img src="img/图形学/5.jpg" alt="图形学" class="project-image">
             <img src="img/图形学/6.jpg" alt="图形学" class="project-image">
+            <img src="img/图形学/7.jpg" alt="图形学" class="project-image">
             <img src="img/图形学/图形学淘宝接单.png" alt="图形学" class="project-image">
+        </div>
+        <div class="proof-image-container">
+            <img src="img/算法/1.jpg" alt="算法" class="project-image">
+            <img src="img/算法/2.jpg" alt="算法" class="project-image">
+            <img src="img/算法/3.jpg" alt="算法" class="project-image">
+            <img src="img/算法/4.jpg" alt="算法" class="project-image">
+            <img src="img/算法/5.jpg" alt="算法" class="project-image">
+            <img src="img/算法/6.jpg" alt="算法" class="project-image">
+        </div>
+    </div>
+
+    <div id="qt-explanation" class="explanation">
+        <h2>Qt绘图软件</h2>
+        <p>Qt绘图软件，毕业设计，图元设计方法，有回退功能，多画板设计，贝塞尔曲线，B样条的实现，等等</p>
+        <div class="proof-image-container">
+            <img src="img/Qt绘图软件/1.jpg" alt="Qt绘图软件" class="project-image">
         </div>
     </div>
     
+    <div id="ocr-explanation" class="explanation">
+        <h2>OCR物料编码系统</h2>
+        <p>钢铁产业线，线材、棒材、热轧、冷轧的物料编码识别于追踪。难点在于数字模糊，精度低，工作重点也就在于优化精度，提高速度。</p>
+        <div class="proof-image-container">
+            <img src="img/ocr物料编码/0.png" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/1.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/2.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/3.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/4.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/5.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/6.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/ocr物料编码/7.jpg" alt="ocr物料编码" class="project-image">
+        </div>
+    </div>
 
+    <div id="yolov5deepsort-explanation" class="explanation">
+        <h2>高速车流追踪</h2>
+        <p>一个是车辆检测，进出的流量计算，以及采用了畸变矫正的方式来测量车速</p>
+        <div class="proof-image-container">
+            <img src="img/高速车流追踪/1.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/高速车流追踪/3.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/高速车流追踪/4.jpg" alt="ocr物料编码" class="project-image">
+        </div>
+    </div>
+
+    <div id="ue4-explanation" class="explanation">
+        <h2>UE4的一些学习记录</h2>
+        <p>一个是车辆检测，进出的流量计算，以及采用了畸变矫正的方式来测量车速</p>
+        <div class="proof-image-container">
+            <img src="img/UE4/1.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/UE4/2.jpg" alt="ocr物料编码" class="project-image">
+            <img src="img/UE4/3.jpg" alt="ocr物料编码" class="project-image">
+        </div>
+    </div>
+
+
+    <div id="xjxc-explanation" class="explanation">
+        <h2>循迹小车</h2>
+        <p>红外线黑胶带寻迹，实时视频传输，红外避障功能，等等</p>
+        <div class="proof-image-container">
+            <img src="img/循迹小车/1.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/2.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/3.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/4.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/5.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/6.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/7.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/8.jpg" alt="循迹小车" class="project-image">
+            <img src="img/循迹小车/9.jpg" alt="循迹小车" class="project-image">
+        </div>
+    </div>
     <a href="resume-complete
     .html" class="back-link">返回简历</a>
 </body>
